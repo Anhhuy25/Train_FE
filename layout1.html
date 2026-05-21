@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Trang Web Đơn Giản Nhất</title>
+    <style>
+      /* 1. CÀI ĐẶT CHUNG */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #eeeeee;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* 2. PHẦN ĐẦU TRANG */
+      .header {
+        background-color: #4caf50; /* Màu xanh lá */
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* 3. THANH MENU */
+      .menu {
+        background-color: #333333;
+        overflow: hidden; /* Giúp bao bọc các mục bên trong */
+      }
+
+      .menu a {
+        float: left; /* Xếp các mục nằm ngang */
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none; /* Bỏ gạch chân */
+      }
+
+      .menu a:hover {
+        background-color: #dddddd;
+        color: black;
+      }
+
+      /* 4. KHUNG CHỨA NỘI DUNG */
+      .container {
+        width: 80%; /* Chiều rộng trang web */
+        margin: 20px auto; /* Căn giữa toàn bộ khung */
+        background-color: white;
+        padding: 20px;
+        border: 1px solid #cccccc;
+      }
+
+      /* 5. HÌNH ẢNH */
+      .hinh-anh {
+        width: 100%;
+        height: auto;
+      }
+
+      /* 6. CHÂN TRANG */
+      .footer {
+        background-color: #333333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        /* Để chân trang luôn nằm dưới cùng */
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Phần đầu trang -->
+    <div class="header">
+      <h1>Website Của Tôi</h1>
+      <p>Đây là giao diện đơn giản cho người mới bắt đầu</p>
+    </div>
+
+    <!-- Thanh điều hướng -->
+    <div class="menu">
+      <a href="#">Trang chủ</a>
+      <a href="#">Tin tức</a>
+      <a href="#">Sản phẩm</a>
+      <a href="#">Liên hệ</a>
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+      <h2>Bài viết số 1</h2>
+      <p>
+        Chào bạn, đây là bài viết đầu tiên. Ở mức độ này, chúng ta chỉ cần học
+        cách:
+      </p>
+      <ul>
+        <li>Sử dụng thẻ div để chia khối.</li>
+        <li>Dùng class để đặt tên và viết CSS.</li>
+        <li>Thay đổi màu sắc và kích thước chữ.</li>
+        <li>Cách căn giữa một khối bằng <code>margin: auto</code>.</li>
+      </ul>
+
+      <img
+        src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600"
+        alt="Máy tính"
+        class="hinh-anh"
+      />
+
+      <p>Hãy thử thay đổi màu sắc ở phần CSS bên trên để xem kết quả nhé!</p>
+    </div>
+
+    <!-- Chân trang -->
+    <div class="footer">
+      <p>Bản quyền &copy; 2024 - Học lập trình web</p>
+    </div>
+  </body>
+</html>
